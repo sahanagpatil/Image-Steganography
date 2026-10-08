@@ -121,6 +121,19 @@ Overall Workflow
               │                     │
               ▼                     ▼
          Stego Image          Secret Data
+
+Compilation:
+Compile the project using GCC:
+gcc encode.c decode.c test_encode.c -o stego
+
+Execution:
+Encoding
+./stego -e <source_image.bmp> <secret_file> <output_image.bmp>
+Ex: ./stego -e beautiful.bmp secret.txt stego.bmp
+Decoding:
+./stego -d <stego_image.bmp>
+Ex: ./stego -d stego.bmp
+
 **Key Learning Outcomes**
 
 Through this project, I gained practical experience in:
@@ -136,4 +149,6 @@ Debugging and problem solving
 ##Project Outcome##
 Successfully developed a C-based Image Steganography application capable of hiding secret information inside BMP images using the LSB technique and extracting the hidden information through the decoding process.
 
-
+Author
+Sahana Patil
+B.E. Electrical & Electronics Engineering | Embedded Systems Enthusiast
